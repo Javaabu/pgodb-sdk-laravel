@@ -1,0 +1,68 @@
+{
+    "name": "javaabu/pgodb-sdk-laravel",
+    "description": "pgodb-sdk-laravel",
+    "keywords": [
+        "javaabu",
+        "pgodb-sdk-laravel"
+    ],
+    "homepage": "https://github.com/javaabu/pgodb-sdk-laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ibrahim Hussain Shareef",
+            "email": "ibrahim@javaabu.com",
+            "homepage": "https://spatie.be",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/contracts": "^8.0",
+        "javaabu/pgodb-sdk": "^0.1.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Javaabu\\PgoDbAPI\\": "src",
+            "Javaabu\\PgoDbAPI\\Database\\Factories\\": "database/factories"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Javaabu\\PgoDbAPI\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "psalm": "vendor/bin/psalm",
+        "test": "vendor/bin/phpunit --colors=always",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Javaabu\\PgoDbAPI\\PgoDbAPIServiceProvider"
+            ],
+            "aliases": {
+                "PgoDbAPI": "PgoDbAPI"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/spatie"
+        },
+        {
+            "type": "other",
+            "url": "https://spatie.be/open-source/support-us"
+        }
+    ]
+}
