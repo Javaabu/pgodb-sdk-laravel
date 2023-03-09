@@ -1,4 +1,5 @@
 # PGODB SDK Laravel
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/javaabu/pgodb-sdk-laravel.svg?style=flat-square)](https://packagist.org/packages/javaabu/pgodb-sdk-laravel)
 
 Laravel SDK for Prosecutor General's Office's Criminal Justice Sector database.
 
